@@ -2,7 +2,9 @@
  * Created by mmasuyama on 9/2/2015.
  */
 
-var tableExportCtrl = function($element, $attrs, $document) {
+var tableExportCtrl = tableExportCtrl;
+tableExportCtrl.$inject = ['$element', '$attrs', '$document'];
+function tableExportCtrl($element, $attrs, $document) {
   var ctrl = this;
 
     var elementScope = $element.isolateScope();
@@ -57,7 +59,9 @@ var tableExportCtrl = function($element, $attrs, $document) {
     })
 };
 
-var compileExportTable = function($element, $attrs, transcludeFn) {
+var compileExportTable = compileExportTable;
+compileExportTable.$inject = ['$element', '$attrs', 'transcludeFn']; 
+function compileExportTable($element, $attrs, transcludeFn) {
 
 };
 

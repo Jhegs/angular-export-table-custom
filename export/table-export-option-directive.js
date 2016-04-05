@@ -1,7 +1,9 @@
 /**
  * Created by mmasuyama on 9/3/2015.
  */
-var teOptionCtrl = function($scope, $element, $attrs) {
+var teOptionCtrl = teOptionCtrl;
+teOptionCtrl.$inject = ['$scope', '$element', '$attrs'];
+function teOptionCtrl($scope, $element, $attrs) {
   var ctrl = this;
     var elementScope = $element.isolateScope().ctrl;
 
@@ -12,7 +14,7 @@ var teOptionCtrl = function($scope, $element, $attrs) {
     })
 };
 
-var linkFn = function($scope, $element, $attrs, dirContrl) {
+function linkFn($scope, $element, $attrs, dirContrl) {
     var elementScope = $element.isolateScope();
     elementScope.ctrl.tableExportCtrl = dirContrl;
 
