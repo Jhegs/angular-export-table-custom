@@ -34,7 +34,7 @@ after, add this dependency for your angular module as follows:
 add this to bower to install it automatically. 
 
 ```
-"angular-export-table-custom": "~0.2.0",
+"angular-export-table-jx": "latest"
 ```
 
 ###Allowed formats
