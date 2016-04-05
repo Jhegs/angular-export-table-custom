@@ -31,6 +31,12 @@ after, add this dependency for your angular module as follows:
     angular.module('myApp', ['ceibo.components.table.export']);
 ```
 
+add this to bower to install it automatically. 
+
+```
+"angular-export-table-custom": "~0.2.0",
+```
+
 ###Allowed formats
 
     -JSON
